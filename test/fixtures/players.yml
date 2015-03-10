@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  rname: MyString
+  email: MyString
+  from: MyString
+  steam_id: MyString
+  fcls: 1
+  fweap: 1
+  fmt: 1
+  fm: 1
+  pcls: 1
+  pweap: 1
+  rep: 1
+  fract: 1
+  clan: MyString
+
+two:
+  name: MyString
+  rname: MyString
+  email: MyString
+  from: MyString
+  steam_id: MyString
+  fcls: 1
+  fweap: 1
+  fmt: 1
+  fm: 1
+  pcls: 1
+  pweap: 1
+  rep: 1
+  fract: 1
+  clan: MyString

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+<% provide(:title, @player.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @player %>
+        <%= @player.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
+<p>
+  <strong>Name:</strong>
+  <%= @player.name %>
+</p>
+
+<p>
+  <strong>Rname:</strong>
+  <%= @player.rname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @player.email %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @player.from %>
+</p>
+
+<p>
+  <strong>Steam:</strong>
+  <%= @player.steam_id %>
+</p>
+
+<p>
+  <strong>Fcls:</strong>
+  <%= @player.fcls %>
+</p>
+
+<p>
+  <strong>Fweap:</strong>
+  <%= @player.fweap %>
+</p>
+
+<p>
+  <strong>Fmt:</strong>
+  <%= @player.fmt %>
+</p>
+
+<p>
+  <strong>Fm:</strong>
+  <%= @player.fm %>
+</p>
+
+<p>
+  <strong>Pcls:</strong>
+  <%= @player.pcls %>
+</p>
+
+<p>
+  <strong>Pweap:</strong>
+  <%= @player.pweap %>
+</p>
+
+<p>
+  <strong>Rep:</strong>
+  <%= @player.rep %>
+</p>
+
+<p>
+  <strong>Fract:</strong>
+  <%= @player.fract %>
+</p>
+
+<p>
+  <strong>Clan:</strong>
+  <%= @player.clan %>
+</p>
+
+<%= link_to 'Редактировать', edit_player_path(@player) %> |
+<%= link_to 'Назад', players_path %>

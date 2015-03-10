@@ -1,0 +1,53 @@
+<h1>Listing players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rname</th>
+      <th>Email</th>
+      <th>From</th>
+      <th>Steam</th>
+      <th>Fcls</th>
+      <th>Fweap</th>
+      <th>Fmt</th>
+      <th>Fm</th>
+      <th>Pcls</th>
+      <th>Pweap</th>
+      <th>Rep</th>
+      <th>Fract</th>
+      <th>Clan</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.name %></td>
+        <td><%= player.rname %></td>
+        <td><%= player.email %></td>
+        <td><%= player.from %></td>
+        <td><%= player.steam_id %></td>
+        <td><%= player.fcls %></td>
+        <td><%= player.fweap %></td>
+        <td><%= player.fmt %></td>
+        <td><%= player.fm %></td>
+        <td><%= player.pcls %></td>
+        <td><%= player.pweap %></td>
+        <td><%= player.rep %></td>
+        <td><%= player.fract %></td>
+        <td><%= player.clan %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>

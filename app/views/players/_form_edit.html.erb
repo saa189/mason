@@ -1,0 +1,73 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Игровой ник" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label "Реальное имя" %><br>
+    <%= f.text_field :rname %>
+  </div>
+  <div class="field">
+    <%= f.label "Почта" %><br>
+    <%= f.text_field :email %>
+  </div>
+ <div class="field">
+    <%= f.label "Место жительства" %><br>
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label "Steam id" %><br>
+    <%= f.text_field :steam_id %>
+  </div>
+ <div class="field">
+    <%= f.label "Любимый класс" %><br>
+    <%= f.number_field :fcls %>
+  </div>
+  <div class="field">
+    <%= f.label "Любимое оружее" %><br>
+    <%= f.number_field :fweap %>
+  </div>
+  <div class="field">
+    <%= f.label "Любимый режим" %><br>
+    <%= f.number_field :fmt %>
+  </div>
+  <div class="field">
+    <%= f.label "Любимая карта" %><br>
+    <%= f.number_field :fm %>
+  </div>
+  <div class="field">
+    <%= f.label "Популярный класс" %><br>
+    <%= f.number_field :pcls %>
+  </div>
+  <div class="field">
+    <%= f.label "Популярное оружее" %><br>
+    <%= f.number_field :pweap %>
+  </div>
+  <div class="field">
+    <%= f.label "Репутация" %><br>
+    <%= f.number_field :rep %>
+  </div>
+  <div class="field">
+    <%= f.label "Фракция" %><br>
+    <%= f.number_field :fract %>
+  </div>
+  <div class="field">
+    <%= f.label "Клан" %><br>
+    <%= f.text_field :clan %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
